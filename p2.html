@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sum & Average Program</title>
+    <style>
+        body{background-color: rgb(5, 8, 48);color: white;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Sum & Average Program
+        </h1>
+    </header>
+    <hr>
+
+    <section>
+        <h4>Problem Statement:</h4>
+        <p>Write a program in any language to read 10 numbers from keyboard and find their sum and average.</p>
+    </section>
+    <hr>
+
+    <section>
+        <h4>Code:</h4>
+        <pre>
+            <code>
+                //C++ code
+
+                int main() 
+                {
+
+                    int sum = 0;
+                    float average = 0;
+
+                    int numbers[10];
+
+                    for(int i = 0; i < 10; i++){
+                        cout << "Enter Number " << i+1 << ": ";
+                        cin >> numbers[i];
+                    }
+
+                    for(int i = 0; i < 10; i++){
+                        sum += numbers[i];
+                    }
+
+                    average = sum/10;
+
+                    cout << "\nThe sum of the numbers is " << sum << endl;
+                    cout << "\nThe average of the numbers is " << average << endl;
+
+                    return 0;
+                }
+            </code>
+        </pre>
+    </section>
+    <hr>
+
+    <section>
+        <h4>Sample Input:</h4>
+        <pre>
+            <kbd>
+                Enter number 1: 10
+                Enter number 2: 20
+                Enter number 3: 30
+                Enter number 4: 40
+                Enter number 5: 50
+                Enter number 6: 60
+                Enter number 7: 70
+                Enter number 8: 80
+                Enter number 9: 90
+                Enter number 10: 100
+            </kbd>
+        </pre>
+    </section>
+    <hr>
+
+    <section>
+        <h4>
+            Sample Output:
+        </h4>
+        <pre>
+            <var>
+                The sum of the numbers is 550
+                The average of the numbers is 55
+            </var>
+        </pre>
+    </section>
+    <hr>
+
+    <section>
+        <h4>Variables used in the program:</h4>
+        <p>
+            sum, i,average
+        </p>
+    </section>
+    <hr>
+
+    <section>
+        <h4>Complexity:</h4>
+        <p>Time:</p>
+        <small><b>O(n)</b></small>
+        <p>Space:</p>
+        <small><b>O(n)</b></small>
+    </section>
+    <hr>
+    
+    <a href="https://www.knowprogram.com/cpp/cpp-program-to-find-sum-and-average-of-three-numbers/">Algo Reference</a>
+    <hr>
+    
+    <footer>
+        <i>Created By Vaibhav Kute</i>
+    </footer>
+
+</body>
+</html>
